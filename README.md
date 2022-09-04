@@ -14,7 +14,8 @@ If clipboard doesn't work you need to install also
 
 ## Credential Manager for Github 
 
-- Watch the video.
+- Watch the video (https://youtu.be/-vE18egR0SA)
+
 - Then install libsecret, you need install also 
 
 ``sudo pacman -S gnome-keyring``
