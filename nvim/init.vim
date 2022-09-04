@@ -14,11 +14,14 @@ set ignorecase              " case insensitive
 set ignorecase              " case insensitive 
 set number                  " set number
 set relativenumber          " relative line numbers
+set foldmethod=syntax       " the folds will be specified from the syntax definitions
+set foldlevel=99            " not init collapse
 nnoremap o o<Esc>k          " not exit normal mode and stay here
 nnoremap O O<Esc>j          " not exit normal mode and stay here
+set encoding=UTF-8          " set the enconding for icons
 
 "Plugins
-call plug#begin('~/.config/nvim/autoload/plugged')
+call plug#begin('~/AppData/Local/nvim/plugged') 
 
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
@@ -29,10 +32,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Vim-Airline
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+    "Dracula Theme
+    Plug 'dracula/vim', { 'as': 'dracula' }
+    "Icons in NerdTree
+    Plug 'ryanoasis/vim-devicons' 
 
 call plug#end()
 
 
 "Configs Plugs
-colorscheme onedark         " set theme onedark
-let g:airline_theme='onedark' " set airline onedark
+colorscheme dracula         " set theme dracula
+let g:airline_theme ='dracula' " set airline onedarkMy Pluging:echo stdpath('config')s
