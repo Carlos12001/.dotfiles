@@ -1,12 +1,12 @@
 "Auto-install vim-plug
-if empty(glob('~/.config/nvim/autoload/plug.vim'))
-  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  "autocmd VimEnter * PlugInstall
-  "autocmd VimEnter * PlugInstall | source $MYVIMRC
-endif
+"if empty(glob('~/.config/nvim/autoload/plug.vim'))
+"  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+"    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"  "autocmd VimEnter * PlugInstall
+"  "autocmd VimEnter * PlugInstall | source $MYVIMRC
+"endif
 
-"Nvim config
+" Nvim config
 syntax on                   " syntax highlighting
 set mouse=a                 " enable mouse click
 set clipboard=unnamedplus   " using system clipboard
@@ -20,26 +20,30 @@ nnoremap o o<Esc>k          " not exit normal mode and stay here
 nnoremap O O<Esc>j          " not exit normal mode and stay here
 set encoding=UTF-8          " set the enconding for icons
 
-"Plugins
+" Plugins
 call plug#begin('~/AppData/Local/nvim/plugged') 
 
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
     " File Explorer
     Plug 'scrooloose/NERDTree'
-    "One Dark Theme
+    " One Dark Theme
     Plug 'joshdick/onedark.vim'
-    "Vim-Airline
+    " Vim-Airline
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
-    "Dracula Theme
+    " Dracula Theme
     Plug 'dracula/vim', { 'as': 'dracula' }
-    "Icons in NerdTree
+    " Icons in NerdTree
     Plug 'ryanoasis/vim-devicons' 
+   
+
+    " PreviewMarkdown
+    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 call plug#end()
 
 
-"Configs Plugs
+" Configs Plugs
 colorscheme dracula         " set theme dracula
 let g:airline_theme ='dracula' " set airline onedarkMy Pluging:echo stdpath('config')s
