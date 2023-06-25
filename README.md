@@ -19,3 +19,4 @@ If clipboard doesn't work you need to install also
 - Then install libsecret, you need install also 
 
 ``sudo pacman -S gnome-keyring``
+
