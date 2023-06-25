@@ -8,9 +8,9 @@ This repository is a save for my dotfiles.
 
 If clipboard doesn't work you need to install also 
 
-
-``Sudo pacman -S xclip``
-
+```
+Sudo pacman -S xclip
+```
 
 # Git
 
@@ -20,5 +20,10 @@ If clipboard doesn't work you need to install also
 
 - Then install libsecret, you need install also 
 
-``sudo pacman -S gnome-keyring``
+```
+sudo pacman -S gnome-keyring
+```
 
+```
+git config --global credential.helper /lib/git-core/git-credential-gnome-keyring 
+```
