@@ -25,5 +25,5 @@ sudo pacman -S gnome-keyring
 ```
 
 ```
-git config --global credential.helper /lib/git-core/git-credential-gnome-keyring 
+git config --global credential.helper /lib/git-core/git-credential-libsecret
 ```
