@@ -8,7 +8,9 @@ This repository is a save for my dotfiles.
 
 If clipboard doesn't work you need to install also 
 
+
 ``Sudo pacman -S xclip``
+
 
 # Git
 
