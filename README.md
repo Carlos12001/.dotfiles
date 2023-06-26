@@ -18,12 +18,16 @@ Sudo pacman -S xclip
 
 - Watch the video (https://youtu.be/-vE18egR0SA)
 
-- Then install libsecret, you need install also 
+- Then install libsecret, you need install also
 
+```bash
+sudo pacman -Syu libsecret 
 ```
+
+```bash
 sudo pacman -S gnome-keyring
 ```
 
-```
+```bash
 git config --global credential.helper /lib/git-core/git-credential-libsecret
 ```
