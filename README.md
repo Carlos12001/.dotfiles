@@ -31,3 +31,7 @@ sudo pacman -S gnome-keyring
 ```bash
 git config --global credential.helper /lib/git-core/git-credential-libsecret
 ```
+
+```bash
+git config --global credential.helper store
+```
