@@ -206,3 +206,15 @@ python -m pip install --user --upgrade pynvim
 npm install -g tree-sitter-cli
 npm install -g neovim
 ```
+
+## Fasfetch
+
+## Linux Installation
+
+**Fasfetch** is a fast system information tool written in Rust.
+
+```bash
+sudo add-apt-repository ppa:zhangsongcui3371/fastfetch -y
+sudo apt update
+sudo apt install fastfetch -y
+```
