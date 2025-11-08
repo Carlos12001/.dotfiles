@@ -119,6 +119,8 @@ source ~/.zshrc
 # Install Tree-sitter CLI (required for parser compilation)
 sudo npm install -g tree-sitter-cli
 
+npm install -g neovim
+
 # Recommended tools
 sudo apt install -y fzf
 ```
@@ -148,6 +150,7 @@ python -m pip install --user --upgrade pynvim
 
 # === Tree-sitter CLI (required for parser compilation) ===
 npm install -g tree-sitter-cli
+npm install -g neovim
 ```
 
 ### WSL Integration
