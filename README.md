@@ -11,6 +11,26 @@ sudo apt update
 sudo apt install -y git curl zsh unzip build-essential ripgrep fd-find fzf
 ```
 
+#### Change Default Editor
+
+```bash
+sudo update-alternatives --config editor
+```
+
+#### Enable Password Feedback in Terminal
+
+By default, Linux hides visual feedback when entering passwords (for example when using `sudo`).
+
+```bash
+sudo visudo
+```
+
+Then add or modify the following line:
+
+```bash
+Defaults        env_reset,pwfeedback
+```
+
 ### Windows
 
 ```powershell
@@ -65,7 +85,8 @@ source ~/.zshrc
 
 > [!NOTE]
 > When using **WSL** with **Docker Desktop**, you may sometimes see this error:
-> ```
+>
+> ```bash
 > compinit:527: no such file or directory: /usr/share/zsh/vendor-completions/_docker
 > ```
 >
@@ -103,7 +124,7 @@ sudo apt update
 sudo apt install -y neovim
 ```
 
-### Clipboard Support
+### Clipboard Support (Arch Linux)
 
 ```bash
 sudo pacman -S xclip
@@ -113,7 +134,7 @@ sudo pacman -S xclip
 
 Follow the instructions below to set up **LazyVim** as your Neovim configuration.
 
-https://www.lazyvim.org/installation
+<https://www.lazyvim.org/installation>
 
 ### Linux / WSL Setup
 
@@ -153,9 +174,6 @@ Install dependencies required for **LazyVim** under Windows:
 
 ```powershell
 # === Core dependencies for LazyVim ===
-winget install Neovim.Neovim --accept-package-agreements --accept-source-agreements
-winget install Git.Git --accept-package-agreements --accept-source-agreements
-winget install Python.Python.3.13 --accept-package-agreements --accept-source-agreements
 winget install OpenJS.NodeJS.LTS --accept-package-agreements --accept-source-agreements
 winget install BrechtSanders.WinLibs.POSIX.UCRT --accept-package-agreements --accept-source-agreements
 
