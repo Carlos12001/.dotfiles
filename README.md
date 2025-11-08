@@ -85,7 +85,6 @@ source ~/.zshrc
 >
 > This ensures Zsh only loads Docker completions if they exist, avoiding warnings when Docker is inactive.
 
-
 ## Neovim
 
 ### Installation
@@ -174,21 +173,4 @@ python -m pip install --user --upgrade pynvim
 # === Tree-sitter CLI (required for parser compilation) ===
 npm install -g tree-sitter-cli
 npm install -g neovim
-```
-
-### WSL Integration
-
-To share the same Neovim configuration between **Windows** and **WSL**, link the configuration directory:
-
-```bash
-mkdir -p ~/.config
-ln -s /mnt/c/Users/carlos/AppData/Local/nvim ~/.config/nvim
-```
-
-### Post-Installation Verification
-
-After installation, open Neovim and run:
-
-```bash
-:LazyHealth
 ```
