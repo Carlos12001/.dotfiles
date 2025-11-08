@@ -209,12 +209,22 @@ npm install -g neovim
 
 ## Fasfetch
 
-## Linux Installation
+### Linux Installation
 
 **Fasfetch** is a fast system information tool written in Rust.
 
 ```bash
 sudo add-apt-repository ppa:zhangsongcui3371/fastfetch -y
 sudo apt update
-sudo apt install fastfetch -y
+sudo apt install -y fastfetch
+```
+
+## Batcat
+
+### Linux Installation
+
+**Batcat** is a cat(1) clone with wings.
+
+```bash
+sudo apt install -y bat
 ```
