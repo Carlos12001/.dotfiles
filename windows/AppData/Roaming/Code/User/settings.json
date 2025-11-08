@@ -4,7 +4,7 @@
   "workbench.iconTheme": "material-icon-theme",
   // Font
   "editor.fontSize": 18,
-  "editor.fontFamily": "MesloLGS NF",
+  "editor.fontFamily": "RobotoMono Nerd Font",
   // Editor Settings
   "editor.wordWrap": "on",
   "editor.mouseWheelZoom": true,
