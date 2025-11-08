@@ -181,3 +181,7 @@ runs/
 output_files/
 db/
 incremental_db/
+
+
+########## Do not ignore ##########
+!windows/.vscode/
