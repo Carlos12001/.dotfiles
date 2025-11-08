@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=pcloud
+Comment=pcloudstartup script
+Exec=/home/carlos/Documents/pcloud
+StartupNotify=false
+Terminal=false
+X-GNOME-Autostart-enabled=true

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/carlos/bin/steam-export-shortcuts.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Steam Shortcuts Export
+Comment=Export Steam Flatpak games and icons to the host menu
