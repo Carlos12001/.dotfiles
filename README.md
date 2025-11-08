@@ -81,7 +81,7 @@ sudo apt update
 sudo apt install -y neovim
 ```
 
-### Clipboard Support (Arch-based)
+### Clipboard Support
 
 ```bash
 sudo pacman -S xclip
