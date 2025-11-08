@@ -1,0 +1,12 @@
+[user]
+	name = Carlos12001
+	email = carlos.andres12001@gmail.com
+[core]
+	editor = nvim
+	autocrlf = true
+[init]
+	defaultBranch = master
+[pull]
+	rebase = true
+[safe]
+	directory = *

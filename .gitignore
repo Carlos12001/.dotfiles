@@ -1,48 +1,183 @@
-#My ignores
+# ============================================================
+# Global .gitignore for Linux, Windows, WSL, and cross-language projects
+# Includes: C/C++, Rust, C#, FPGA, Python, and common IDEs/editors
+# ============================================================
 
-
-# Created by https://www.toptal.com/developers/gitignore/api/linux,windows
-# Edit at https://www.toptal.com/developers/gitignore?templates=linux,windows
-
-### Linux ###
+# --- System files ---
+# Linux
 *~
-
-# temporary files which can be created if a process still has a handle open of a deleted file
 .fuse_hidden*
-
-# KDE directory preferences
 .directory
-
-# Linux trash folder which might appear on any partition or disk
 .Trash-*
-
-# .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
-### Windows ###
-# Windows thumbnail cache files
+# Windows
 Thumbs.db
 Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
-
-# Dump file
-*.stackdump
-
-# Folder config file
 [Dd]esktop.ini
-
-# Recycle Bin used on file shares
 $RECYCLE.BIN/
-
-# Windows Installer files
+*.stackdump
 *.cab
 *.msi
 *.msix
 *.msm
 *.msp
-
-# Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/linux,windows
+# macOS
+.DS_Store
+
+# WSL (Windows Subsystem for Linux)
+wsl$/
+*.wsl
+/mnt/c/Users/*/AppData/Local/Temp/
+*.lnk
+*.bak~
+*history_sta
+*.tmp
+*.crdownload
+
+# --- Temporary and backup files ---
+*~
+*.bak
+*.tmp
+*.swp
+*.swo
+*.old
+
+# --- Compressed and packaged files ---
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.iso
+*.img
+
+# --- VSCode ---
+.vscode/
+.history/
+
+# --- Neovim / Vim ---
+.netrwhist
+session.vim
+swapfile
+*.swp
+*.swo
+.undodir/
+shada/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# --- Docker ---
+*.tar
+*.img
+*.log
+
+# --- C / C++ ---
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.a
+*.lib
+*.pch
+*.pdb
+*.exp
+*.idb
+*.ipch
+*.rsp
+*.manifest
+*.mod
+*.cmd
+*.sbr
+*.dSYM/
+*.VC.db
+*.VC.VC.opendb
+
+# --- CLion / JetBrains ---
+.idea/
+cmake-build-*/
+
+# --- CMake ---
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+_build/
+build/
+out/
+bin/
+lib/
+
+# --- Rust ---
+target/
+Cargo.lock
+*.rs.bk
+
+# --- C# / .NET ---
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vcxproj.user
+*.dbmdl
+*.cache
+*.log
+
+# --- FPGA / LiteX ---
+gateware/
+software/include/generated/
+*.fbi
+*.d
+*.map
+*.elf
+*.bin
+
+# --- Simulation (Verilator / GTKWave) ---
+work/
+obj_dir/
+sim_output/
+transcript
+waveforms/
+*history_sta
+*.vcd
+*.fst
+*.out
+*.vvp
+*.dat
+*.log
+
+# --- Synthesis / P&R tools ---
+*.blif
+*.edif
+*.sdf
+*.svf
+*.bit
+*.gds
+results/
+runs/
+output_files/
+db/
+incremental_db/

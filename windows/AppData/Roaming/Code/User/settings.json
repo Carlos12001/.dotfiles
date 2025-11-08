@@ -1,0 +1,276 @@
+{
+  // Theme Color and Icons
+  "workbench.colorTheme": "Aurora X",
+  "workbench.iconTheme": "material-icon-theme",
+  // Font
+  "editor.fontSize": 18,
+  "editor.fontFamily": "MesloLGS NF",
+  // Editor Settings
+  "editor.wordWrap": "on",
+  "editor.mouseWheelZoom": true,
+  "editor.tabSize": 2,
+  "editor.scrollbar.vertical": "auto",
+  "editor.autoClosingBrackets": "never",
+  // Editor Rulers
+  "editor.rulers": [
+    {
+      "column": 70
+    },
+    {
+      "column": 80
+    }
+  ],
+  // Save Files
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "editor.formatOnSave": true,
+  // Annoying Confirmations
+  "explorer.confirmDelete": false,
+  "debug.onTaskErrors": "abort",
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": true,
+  "security.workspace.trust.enabled": false,
+  "editor.glyphMargin": false,
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "window.titleBarStyle": "custom",
+  "workbench.layoutControl.type": "menu",
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  // Git
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.smartCommitChanges": "all",
+  "gitlens.keymap": "none",
+  "git.openRepositoryInParentFolders": "always",
+  "git.defaultBranchName": "master",
+  "github.gitProtocol": "ssh",
+  "files.exclude": {
+    "**/.git": false
+  },
+  // Terminal Windows
+  "terminal.explorerKind": "integrated",
+  "terminal.external.windowsExec": "wt.exe",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+
+  // Terminal Linux
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.profiles.linux": {
+    "zsh": {
+      "path": "host-spawn",
+      "args": ["zsh"]
+    }
+  },
+  // Code Formatters
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.bracketSameLine": true,
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 2, ColumnLimit: 80}",
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[systemverilog]": {
+    "editor.defaultFormatter": "mshr-h.veriloghdl"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[verilog]": {
+    "editor.defaultFormatter": "mshr-h.veriloghdl"
+  },
+  // C/C++
+  "files.associations": {
+    "stdlib.h": "c",
+    "stdio.h": "c"
+  },
+  "C_Cpp.default.configurationProvider": "mesonbuild.mesonbuild",
+  // Octave
+  "octave.alwaysUseAbsolutePaths": true,
+  "octave.clearPreviousOutput": true,
+  "windows": {
+    "octave.octaveLocation": "C:\\Program Files\\GNU Octave\\Octave-8.2.0\\mingw64\\bin\\octave-cli.exe"
+  },
+  // TypeScript
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // Markdown
+  "markdownlint.config": {
+    "MD013": false,
+    "MD024": {
+      "siblings_only": true
+    }
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": "explicit"
+  },
+  // Glassit
+  "glassit.alpha": 255,
+  // cSpelling
+  "cSpell.language": "en,es-ES",
+  "cSpell.userWords": [
+    "addeq",
+    "agregá",
+    "Anonymice",
+    "Apassword",
+    "autofetch",
+    "BANDPASS",
+    "Blex",
+    "blit",
+    "borrala",
+    "bresenham",
+    "buildtype",
+    "christmas",
+    "cleaning",
+    "codeium",
+    "collidable",
+    "Collidable",
+    "collidables",
+    "colliderect",
+    "Combinational",
+    "decrementamos",
+    "Devid",
+    "dumpfile",
+    "dumpvars",
+    "endcase",
+    "endfunction",
+    "endmodule",
+    "esbenp",
+    "escalabilidad",
+    "ferris",
+    "fhdl",
+    "fibonacci",
+    "galacta",
+    "Genave",
+    "genlib",
+    "glassit",
+    "Grafica",
+    "gtkwave",
+    "huevon",
+    "Hyperparámetros",
+    "hyperparams",
+    "Instanciación",
+    "Instanciamos",
+    "keymap",
+    "lfsr",
+    "linspace",
+    "localparam",
+    "mantenibilidad",
+    "mayéutica",
+    "Meneses",
+    "migen",
+    "morty",
+    "Morty",
+    "multiplexada",
+    "multiplexor",
+    "muxes",
+    "NANGATE",
+    "nbits",
+    "Neovim",
+    "newgrp",
+    "nframes",
+    "nvim",
+    "padx",
+    "pady",
+    "Papayor",
+    "PLOCATION",
+    "PNAME",
+    "posedge",
+    "posx",
+    "probá",
+    "pseudoaleatorios",
+    "pwsh",
+    "pygame",
+    "QUEREY",
+    "reiniciá",
+    "reinstanciar",
+    "reinstanciarlo",
+    "riscv",
+    "Rustanceans",
+    "Santamaría",
+    "smoothscale",
+    "sndfile",
+    "Stravia",
+    "strb",
+    "syscall",
+    "testbench",
+    "Testbench",
+    "Testbenches",
+    "tokyonight",
+    "usermod",
+    "Verilator",
+    "verilog",
+    "Whelen",
+    "WORKDIR",
+    "xhost"
+  ],
+  // NeoVim
+  "vim.disableExtension": true,
+  "vim.useSystemClipboard": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<S-l>"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<S-h>"],
+      "commands": ["workbench.action.previousEditor"]
+    }
+  ],
+  // Auto added configs by VSCode
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "workbench.colorCustomizations": {},
+  "window.confirmSaveUntitledWorkspace": false,
+  "update.showReleaseNotes": false,
+  "interactiveWindow.executeWithShiftEnter": true,
+  "workbench.editorAssociations": {
+    "*.qws": "default"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "cmake.showNotAllDocumentsSavedQuestion": false,
+  "cmake.showConfigureWithDebuggerNotification": false,
+  "cmake.revealLog": "never",
+
+  "markdown-preview-enhanced.codeBlockTheme": "auto.css",
+  "markdown-preview-enhanced.previewTheme": "github-light.css",
+  "window.zoomLevel": 0,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
+  "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose",
+  "workbench.tree.enableStickyScroll": false
+}
