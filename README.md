@@ -15,16 +15,6 @@ sudo pacman -S xclip
 ### Lazy Vim
 
 ```bash
-### LazyVim
-
-Instalación de Neovim y dependencias básicas para LazyVim en WSL.
-
-```bash
-### LazyVim
-
-Install Neovim and the essential dependencies for LazyVim.
-
-```bash
 # Add the official Neovim PPA for the latest version
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt update
