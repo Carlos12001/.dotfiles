@@ -1,0 +1,35 @@
+MenuBar=Disabled
+
+[Desktop Entry]
+FullScreen=false
+shouldShowMenuBarComingFromFullScreen=false
+shouldShowToolBarComingFromFullScreen=false
+
+[General]
+LockSidebar=true
+ShowSidebar=false
+
+[MainWindow]
+MenuBar=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/LabFPGA2.pdf
+File10[$e]=$HOME/Downloads/Sniffer — Qué es, para qué se usa y principales soluciones en el mercado.pdf
+File2[$e]=$HOME/Documents/Books/Recent/Andrew S. Tanenbaum, Nick Feamster, David J. Wetherall - Computer Networks-Pearson.pdf
+File3[$e]=$HOME/Documents/Books/Recent/El-Libro-de-La-Filosofia-Entero (1).pdf
+File4[$e]=$HOME/Downloads/1000058772.pdf
+File5[$e]=$HOME/Documents/Books/Recent/El-Libro-de-La-Filosofia-Entero.pdf
+File6[$e]=$HOME/Downloads/OneDrive_2025-10-25/Session 4/RFP DFT Module 1 Session 4a.pdf
+File7[$e]=$HOME/Downloads/OneDrive_2025-10-25/Session 4/RFP DFT Module 1 Session 4b.pdf
+File8[$e]=$HOME/Downloads/Proyectos_2FDESAFI_CC_81O_REDES.pdf
+File9[$e]=$HOME/Downloads/nyxi-warrior-purple-wireless-controller-user-manual.pdf
+Name1[$e]=LabFPGA2.pdf
+Name10[$e]=Sniffer — Qué es, para qué se usa y principales soluciones en el mercado.pdf
+Name2[$e]=Andrew S. Tanenbaum, Nick Feamster, David J. Wetherall - Computer Networks-Pearson.pdf
+Name3[$e]=El-Libro-de-La-Filosofia-Entero (1).pdf
+Name4[$e]=1000058772.pdf
+Name5[$e]=El-Libro-de-La-Filosofia-Entero.pdf
+Name6[$e]=RFP DFT Module 1 Session 4a.pdf
+Name7[$e]=RFP DFT Module 1 Session 4b.pdf
+Name8[$e]=Proyectos_2FDESAFI_CC_81O_REDES.pdf
+Name9[$e]=nyxi-warrior-purple-wireless-controller-user-manual.pdf

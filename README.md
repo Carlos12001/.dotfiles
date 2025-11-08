@@ -40,6 +40,10 @@ winget install 7zip.7zip --accept-package-agreements --accept-source-agreements
 winget install Mozilla.Firefox --accept-package-agreements --accept-source-agreements
 winget install Microsoft.PowerShell --accept-package-agreements --accept-source-agreements
 winget install Python.Python.3.13 --accept-package-agreements --accept-source-agreements
+winget install KDE.Okular --accept-package-agreements --accept-source-agreements
+winget install --id Flameshot.Flameshot --version 12.1.0 --accept-package-agreements --accept-source-agreements
+winget install  Valve.Steam --accept-package-agreements --accept-source-agreements
+winget install  OBSProject.OBSStudio --accept-package-agreements --accept-source-agreements
 
 # === Optional utilities ===
 winget install Gyan.FFmpeg --accept-package-agreements --accept-source-agreements
@@ -47,6 +51,16 @@ winget install VideoLAN.VLC --accept-package-agreements --accept-source-agreemen
 winget install ArminOsaj.AutoDarkMode --accept-package-agreements --accept-source-agreements
 winget install Telegram.TelegramDesktop --accept-package-agreements --accept-source-agreements
 winget install MiKTeX.MiKTeX --accept-package-agreements --accept-source-agreements
+winget install WinDirStat.WinDirStat --accept-package-agreements --accept-source-agreements
+winget install BleachBit.BleachBit --accept-package-agreements --accept-source-agreements
+winget install pCloudAG.pCloudDrive --accept-package-agreements --accept-source-agreements
+
+# === Microsoft Store apps ===
+
+# WhatsApp Windows
+winget install 9NKSQGP7F2NH --accept-package-agreements --accept-source-agreements
+# Nvidia Control Panel
+winget install 9NF8H0H7WMLT --accept-package-agreements --accept-source-agreements
 ```
 
 ## Zsh
