@@ -8,7 +8,7 @@ This repository stores my personal configuration files for development tools and
 
 ```bash
 sudo apt update
-sudo apt install -y git curl zsh unzip build-essential ripgrep fd-find fzf
+sudo apt install -y git curl zsh unzip build-essential htop python3-venv python3-pip
 ```
 
 #### Change Default Editor
@@ -155,7 +155,7 @@ Follow the instructions below to set up **LazyVim** as your Neovim configuration
 Install all dependencies required for **LazyVim** to function properly:
 
 ```bash
-sudo apt install -y git curl neovim ripgrep fd-find unzip build-essential \
+sudo apt install -y git curl neovim ripgrep fd-find fzf unzip build-essential \
     python3-venv python3-pip luarocks nodejs npm
 
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | \grep -Po '"tag_name": *"v\K[^"]*')
