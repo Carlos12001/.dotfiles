@@ -9,4 +9,5 @@
 	autocrlf = input
 	pager = 
 	editor = nvim --cmd 'set noswapfile'
-
+[safe]
+	directory = *
