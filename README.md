@@ -63,6 +63,29 @@ Finally, apply changes:
 source ~/.zshrc
 ```
 
+> [!NOTE]
+> When using **WSL** with **Docker Desktop**, you may sometimes see this error:
+> ```
+> compinit:527: no such file or directory: /usr/share/zsh/vendor-completions/_docker
+> ```
+>
+> This occurs because Docker Desktop mounts its CLI into WSL, but does **not include** Zsh completion files inside WSL.  
+> To prevent this message (even when Docker Desktop is off), add the following to your `~/.zshrc`:
+>
+> ```bash
+> # Prevent Docker completion error when Docker Desktop is disabled
+> if [[ -f /usr/share/zsh/vendor-completions/_docker ]]; then
+>   fpath=($fpath /usr/share/zsh/vendor-completions)
+> else
+>   plugins=(${plugins:#docker})
+> fi
+> autoload -Uz compinit
+> compinit -i
+> ```
+>
+> This ensures Zsh only loads Docker completions if they exist, avoiding warnings when Docker is inactive.
+
+
 ## Neovim
 
 ### Installation
