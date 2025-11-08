@@ -1,0 +1,12 @@
+[user]
+	email = carlos.andres12001@gmail.com
+	name = Carlos12001
+[pull]
+	rebase = true
+[init]
+	defaultBranch = master
+[core]
+	autocrlf = input
+	pager = 
+	editor = nvim --cmd 'set noswapfile'
+
