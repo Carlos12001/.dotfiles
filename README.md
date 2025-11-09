@@ -40,7 +40,6 @@ winget install 7zip.7zip --accept-package-agreements --accept-source-agreements
 winget install Mozilla.Firefox --accept-package-agreements --accept-source-agreements
 winget install Microsoft.PowerShell --accept-package-agreements --accept-source-agreements
 winget install Python.Python.3.13 --accept-package-agreements --accept-source-agreements
-winget install KDE.Okular --accept-package-agreements --accept-source-agreements
 winget install --id Flameshot.Flameshot --version 12.1.0 --accept-package-agreements --accept-source-agreements
 winget install  Valve.Steam --accept-package-agreements --accept-source-agreements
 winget install  OBSProject.OBSStudio --accept-package-agreements --accept-source-agreements
@@ -58,6 +57,8 @@ winget install pCloudAG.pCloudDrive --accept-package-agreements --accept-source-
 # === Microsoft Store apps ===
 
 # WhatsApp Windows
+# Okular
+winget install 9N41MSQ1WNM8 --accept-package-agreements --accept-source-agreements
 winget install 9NKSQGP7F2NH --accept-package-agreements --accept-source-agreements
 # Nvidia Control Panel
 winget install 9NF8H0H7WMLT --accept-package-agreements --accept-source-agreements
