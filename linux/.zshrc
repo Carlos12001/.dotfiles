@@ -143,12 +143,21 @@ if command -v xdg-open >/dev/null 2>&1; then
   alias explorer='xdg-open'
 fi
 
-alias gitcat='rm -f contenido.txt && { git ls-files --cached --others --exclude-standard; } | while read file; do
+if command -v git > /dev/null 2>&1; then
+  alias gitcat='rm -f contenido.txt && { git ls-files --cached --others --exclude-standard; } | while read file; do
     echo "==================== $file ====================" >> contenido.txt
     cat "$file" >> contenido.txt 2>/dev/null
     echo -e "\n" >> contenido.txt
-done'
+  done'
+fi
 
+if command -v python3 > /dev/null 2>&1; then
+  alias python='python3'
+fi
+
+if command -v pytest-3 > /dev/null 2>&1; then
+  alias pytest='pytest-3'
+fi
 
 # --- retrosync command
 if [ -f "$HOME/.config/retroarch/saves/retrosync.sh" ]; then
