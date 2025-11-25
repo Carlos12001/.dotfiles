@@ -159,6 +159,10 @@ if command -v pytest-3 > /dev/null 2>&1; then
   alias pytest='pytest-3'
 fi
 
+if command -v zsh > /dev/null 2>&1; then
+  alias zshrst='source ~/.zshrc'
+fi
+
 # --- retrosync command
 if [ -f "$HOME/.config/retroarch/saves/retrosync.sh" ]; then
   retrosync() {
