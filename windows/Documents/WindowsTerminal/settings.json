@@ -44,7 +44,7 @@
       "opacity": 85,
       "padding": "2",
       "scrollbarState": "hidden",
-      "useAcrylic": false
+      "useAcrylic": true
     },
     "list": [
       {
