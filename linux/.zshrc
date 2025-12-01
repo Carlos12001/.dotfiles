@@ -163,6 +163,16 @@ if command -v zsh > /dev/null 2>&1; then
   alias zshrst='source ~/.zshrc'
 fi
 
+if command -v zsh > /dev/null 2>&1; then
+  alias zshrst='source ~/.zshrc'
+fi
+
+if command -v neovim > /dev/null 2>&1; then
+  alias nm='neovim'
+  alias nmconfig='neovim ~/.config/init.lua'
+  alias nmdir='cd ~/.config/init.lua'
+fi
+
 # --- retrosync command
 if [ -f "$HOME/.config/retroarch/saves/retrosync.sh" ]; then
   retrosync() {
