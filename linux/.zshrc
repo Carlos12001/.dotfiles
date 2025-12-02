@@ -144,8 +144,8 @@ if command -v xdg-open >/dev/null 2>&1; then
 fi
 
 if command -v git >/dev/null 2>&1; then
-  gitcat () {
-    # Output file provided as parameter, or temp_output.bak as default
+  function gitcat {
+    # Output file provided as parameter, or gitcat.bak as default
     output_file="${1:-gitcat.bak}"
 
     rm -f "$output_file"
