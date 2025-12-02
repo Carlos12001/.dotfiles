@@ -143,12 +143,30 @@ if command -v xdg-open >/dev/null 2>&1; then
   alias explorer='xdg-open'
 fi
 
-if command -v git > /dev/null 2>&1; then
-  alias gitcat='rm -f contenido.txt && { git ls-files --cached --others --exclude-standard; } | while read file; do
-    echo "==================== $file ====================" >> contenido.txt
-    cat "$file" >> contenido.txt 2>/dev/null
-    echo -e "\n" >> contenido.txt
-  done'
+if command -v git >/dev/null 2>&1; then
+  gitcat () {
+    # Output file provided as parameter, or temp_output.bak as default
+    output_file="${1:-gitcat.bak}"
+
+    rm -f "$output_file"
+
+    # Case 1: If .gitignore exists → use git ls-files
+    if [[ -f ".gitignore" ]]; then
+      file_list=$(git ls-files --cached --others --exclude-standard)
+    else
+      # Case 2: No .gitignore → process all regular files
+      file_list=$(find . -type f ! -name "$output_file" -printf "%P\n")
+    fi
+
+    # Process each file found
+    while IFS= read -r file; do
+      echo "==================== $file ====================" >> "$output_file"
+      cat "$file" >> "$output_file" 2>/dev/null
+      printf "\n\n" >> "$output_file"
+    done <<< "$file_list"
+
+    printf "Generated: %s\n" "$output_file"
+  }
 fi
 
 if command -v python3 > /dev/null 2>&1; then
