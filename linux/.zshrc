@@ -177,18 +177,25 @@ if command -v pytest-3 > /dev/null 2>&1; then
   alias pytest='pytest-3'
 fi
 
-if command -v zsh > /dev/null 2>&1; then
-  alias zshrst='source ~/.zshrc'
+if [ -n "$ZSH_VERSION" ]; then
+  function zshrst {
+    source "$HOME/.zshrc"
+    echo ".zshrc reloaded"
+  }
 fi
 
-if command -v zsh > /dev/null 2>&1; then
-  alias zshrst='source ~/.zshrc'
-fi
+if command -v nvim >/dev/null 2>&1; then
+  alias nm='nvim'
 
-if command -v neovim > /dev/null 2>&1; then
-  alias nm='neovim'
-  alias nmconfig='neovim ~/.config/init.lua'
-  alias nmdir='cd ~/.config/init.lua'
+  # Alias to edit init.lua only if the file exists
+  if [ -f "$HOME/.config/nvim/init.lua" ]; then
+    alias nmconfig='nvim "$HOME/.config/nvim/init.lua"'
+  fi
+
+  # Alias to enter the nvim config directory if it exists
+  if [ -d "$HOME/.config/nvim" ]; then
+    alias nmdir='cd "$HOME/.config/nvim"'
+  fi
 fi
 
 # --- retrosync command
